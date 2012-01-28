@@ -9,8 +9,10 @@ import optparse
 import datetime
 import dateutil.parser
 import json
+import sys
 
 import parser
+import writer
 
 def main():
     options, args = _parse_args()
@@ -20,6 +22,8 @@ def main():
     imported = parser.parse_adium(filename)
 
     print json.dumps(imported, sort_keys=True, indent=4)
+
+    writer.write_pidgin(imported, sys.stdout)
 
 
 def _parse_args():
