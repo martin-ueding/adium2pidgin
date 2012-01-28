@@ -1,13 +1,20 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
-from xml.dom.minidom import parse
-import xml
 import optparse
 import re
+import xml
+import xml.dom.minidom
+
+def parse(filename, read_format):
+    if read_format == "adium":
+        read_parser = parse_adium
+
+    return read_parser(filename)
 
 def parse_adium(filename):
-    tree = parse(filename)
+    tree = xml.dom.minidom.parse(filename)
     
     chatobject = tree.childNodes[0]
     account = chatobject.getAttribute("account")
@@ -19,7 +26,6 @@ def parse_adium(filename):
     for message in messages:
         if not message.nodeName == "message":
             continue
-
 
         alias = message.getAttribute("alias")
         sender = message.getAttribute("sender")
