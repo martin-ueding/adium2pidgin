@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
-from xml.dom import minidom
-import xml
 import optparse
+import xml
+import xml.dom.minidom
 
 def parse(filename, read_format):
     if read_format == "adium":
@@ -12,7 +12,7 @@ def parse(filename, read_format):
     return read_parser(filename)
 
 def parse_adium(filename):
-    tree = minidom.parse(filename)
+    tree = xml.dom.minidom.parse(filename)
     
     chatobject = tree.childNodes[0]
     account = chatobject.getAttribute("account")
