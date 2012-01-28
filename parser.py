@@ -19,7 +19,6 @@ def parse_adium(filename):
         if not message.nodeName == "message":
             continue
 
-
         alias = message.getAttribute("alias")
         sender = message.getAttribute("sender")
         time = message.getAttribute("time")
