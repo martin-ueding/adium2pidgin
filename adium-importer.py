@@ -21,10 +21,15 @@ def main():
 
     imported = parser.parse_adium(filename)
 
-    print json.dumps(imported, sort_keys=True, indent=4)
+    if options.outfile is not None:
+        outfile = open(options.outfile, "w")
+    else:
+        outfile = sys.stdout
 
-    writer.write_pidgin(imported, sys.stdout)
+    writer.write_pidgin(imported, outfile)
 
+    if options.outfile is not None:
+        outfile.close()
 
 def _parse_args():
     """
@@ -34,7 +39,9 @@ def _parse_args():
     @rtype: tuple
     """
     parser = optparse.OptionParser(usage="", description="")
-    #parser.add_option("", dest="", type="", default=, help=)
+    parser.add_option("-o", dest="outfile", default=None, help="File to write to")
+    parser.add_option("-w", dest="write_format", default="pidgin", help="Write format. [default: %default]")
+    parser.add_option("-r", dest="read_format", default="adium", help="Read format. [default: %default]")
 
     return parser.parse_args()
 
