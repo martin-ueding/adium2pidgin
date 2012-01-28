@@ -7,40 +7,39 @@ import optparse
 import datetime
 import dateutil.parser
 
-class Parser(object):
-    """
-    Parses a chatlog.
-    """
-    def parse(filename):
-        """
-        @rtype: Chat
-        """
-        pass
+import chat
+
+def parse_adium(filename):
+    tree = parse(filename)
+    
+    chatobject = tree.childNodes[0]
+    account = chatobject.getAttribute("account")
+    messages = chatobject.childNodes
+
+    print account
+
+    m_list = []
+
+    for message in messages:
+        if not message.nodeName == "message":
+            continue
 
 
-class AdiumParser(Parser):
-    def parse(filename):
-        tree = parse(filename)
-        
-        chatobject = tree.childNodes[0]
-        account = chatobject.getAttribute("account")
-        messages = chatobject.childNodes
+        alias = message.getAttribute("alias")
+        sender = message.getAttribute("sender")
+        time = dateutil.parser.parse(message.getAttribute("time"))
 
-        print account
+        child = message
+        while child.nodeType != xml.dom.Node.TEXT_NODE:
+            child = child.childNodes[0]
 
-        for message in messages:
-            if not message.nodeName == "message":
-                continue
+        text = child.nodeValue
 
+        print time, alias.rjust(20), ":", text
 
-            alias = message.getAttribute("alias")
-            sender = message.getAttribute("sender")
-            time = dateutil.parser.parse(message.getAttribute("time"))
+        m = chat.Message(time=time, alias=alias, text=text, sender=sender)
+        m_list.append(m)
 
-            child = message
-            while child.nodeType != xml.dom.Node.TEXT_NODE:
-                child = child.childNodes[0]
+    c = chat.Chat(m_list)
 
-            text = child.nodeValue
-
-            print time, alias.rjust(20), ":", text
+    return c

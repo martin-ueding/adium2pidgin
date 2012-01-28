@@ -8,11 +8,18 @@ import xml
 import optparse
 import datetime
 import dateutil.parser
+import json
+
+import parser
 
 def main():
     options, args = _parse_args()
 
     filename = args[0]
+
+    imported = parser.parse_adium(filename)
+
+    print json.dumps(imported.toDict(), sort_keys=True, indent=4)
 
 
 def _parse_args():

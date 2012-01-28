@@ -11,6 +11,11 @@ class Chat(object):
         """
         self.messages = messages
 
+    def toDict(self):
+        return {
+            "messages": [message.toDict() for message in self.messages],
+        }
+
 class Message(object):
     def __init__(self, time, text, sender, alias):
         """
@@ -23,3 +28,12 @@ class Message(object):
         self.text = text
         self.sender = sender
         self.alias = alias
+
+    def toDict(self):
+        return {
+            "time": str(self.time),
+            "text": self.text,
+            "sender": self.sender,
+            "alias": self.alias,
+        }
+
