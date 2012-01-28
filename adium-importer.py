@@ -19,7 +19,7 @@ def main():
 
     imported = parser.parse_adium(filename)
 
-    print json.dumps(imported.toDict(), sort_keys=True, indent=4)
+    print json.dumps(imported, sort_keys=True, indent=4)
 
 
 def _parse_args():
