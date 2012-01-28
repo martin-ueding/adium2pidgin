@@ -3,11 +3,7 @@
 
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
-from xml.dom.minidom import parse
-import xml
 import optparse
-import datetime
-import dateutil.parser
 import json
 
 import parser
