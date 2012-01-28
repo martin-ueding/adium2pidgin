@@ -2,7 +2,7 @@
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
 class Chat(object):
-    def __init__(self, messages):
+    def __init__(self, messages, service, account):
         """
         Creates a new Chat.
 
@@ -10,9 +10,13 @@ class Chat(object):
         @type messages: list
         """
         self.messages = messages
+        self.account = account
+        self.service = service
 
     def toDict(self):
         return {
+            "account": self.account,
+            "service": self.service,
             "messages": [message.toDict() for message in self.messages],
         }
 

@@ -14,6 +14,7 @@ def parse_adium(filename):
     
     chatobject = tree.childNodes[0]
     account = chatobject.getAttribute("account")
+    service = chatobject.getAttribute("service")
     messages = chatobject.childNodes
 
     print account
@@ -40,6 +41,6 @@ def parse_adium(filename):
         m = chat.Message(time=time, alias=alias, text=text, sender=sender)
         m_list.append(m)
 
-    c = chat.Chat(m_list)
+    c = chat.Chat(m_list, account=account, service=service)
 
     return c
