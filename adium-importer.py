@@ -6,6 +6,8 @@
 from xml.dom.minidom import parse
 import xml
 import optparse
+import datetime
+import dateutil.parser
 
 def main():
     options, args = _parse_args()
@@ -15,14 +17,19 @@ def main():
     tree = parse(filename)
     
     chatobject = tree.childNodes[0]
+    account = chatobject.getAttribute("account")
     messages = chatobject.childNodes
+
+    print account
 
     for message in messages:
         if not message.nodeName == "message":
             continue
 
 
+        alias = message.getAttribute("alias")
         sender = message.getAttribute("sender")
+        time = dateutil.parser.parse(message.getAttribute("time"))
 
         child = message
         while child.nodeType != xml.dom.Node.TEXT_NODE:
@@ -30,7 +37,7 @@ def main():
 
         text = child.nodeValue
 
-        print sender.rjust(20), ":", text
+        print time, alias.rjust(20), ":", text
 
 
 
