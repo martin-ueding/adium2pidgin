@@ -14,32 +14,6 @@ def main():
 
     filename = args[0]
 
-    tree = parse(filename)
-    
-    chatobject = tree.childNodes[0]
-    account = chatobject.getAttribute("account")
-    messages = chatobject.childNodes
-
-    print account
-
-    for message in messages:
-        if not message.nodeName == "message":
-            continue
-
-
-        alias = message.getAttribute("alias")
-        sender = message.getAttribute("sender")
-        time = dateutil.parser.parse(message.getAttribute("time"))
-
-        child = message
-        while child.nodeType != xml.dom.Node.TEXT_NODE:
-            child = child.childNodes[0]
-
-        text = child.nodeValue
-
-        print time, alias.rjust(20), ":", text
-
-
 
 def _parse_args():
     """
