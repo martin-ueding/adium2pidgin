@@ -13,8 +13,6 @@ def parse_adium(filename):
     service = chatobject.getAttribute("service")
     messages = chatobject.childNodes
 
-    print account
-
     m_list = []
 
     for message in messages:
@@ -31,8 +29,6 @@ def parse_adium(filename):
             child = child.childNodes[0]
 
         text = child.nodeValue
-
-        print time, alias.rjust(20), ":", text
 
         m = {"time": time, "alias": alias, "text": text, "sender": sender}
         m_list.append(m)
