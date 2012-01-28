@@ -1,12 +1,18 @@
 #!/usr/bin/python
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
-from xml.dom.minidom import parse
+from xml.dom import minidom
 import xml
 import optparse
 
+def parse(filename, read_format):
+    if read_format == "adium":
+        read_parser = parse_adium
+
+    return read_parser(filename)
+
 def parse_adium(filename):
-    tree = parse(filename)
+    tree = minidom.parse(filename)
     
     chatobject = tree.childNodes[0]
     account = chatobject.getAttribute("account")
