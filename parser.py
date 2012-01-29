@@ -84,4 +84,3 @@ def parse_pidgin(filename):
     c = {"messages": m_list, "account": account, "service": service}
     
     return c
-    """
