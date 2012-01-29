@@ -1,6 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
+
+"""
+Parses chatlogs in various formats into a dict and list structure.
+"""
 
 import json
 import optparse
