@@ -9,6 +9,7 @@ The JSON interface allows conversion between all logs formats, one just needs to
 ## Parser
 
 - Adium XML
+- JSON
 - Purple HTML (in progress)
 
 ## Writer
