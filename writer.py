@@ -6,6 +6,16 @@ import dateutil.parser
 import json
 
 def write(chat, outfile, write_format):
+    """
+    Writes a chat dict to an outfile in the given format.
+
+    @param chat: Dict with chat.
+    @type chat: dict
+    @param outfile: File to write to.
+    @type outfile: file
+    @param write_format: Format to write in.
+    @type write_format: str
+    """
     if write_format == "pidgin":
         format_writer = write_pidgin
     elif write_format == "json":

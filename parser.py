@@ -8,6 +8,15 @@ import xml
 import xml.dom.minidom
 
 def parse(filename, read_format):
+    """
+    Parses a chatlog into a chat dict.
+
+    @param filename: File to read.
+    @type filename: str
+    @param read_format: Format of the chatlog.
+    @type read_format: str
+    @rtype: dict
+    """
     if read_format == "adium":
         read_parser = parse_adium
     elif read_format == "pidgin":
@@ -16,6 +25,13 @@ def parse(filename, read_format):
     return read_parser(filename)
 
 def parse_adium(filename):
+    """
+    Parses an Adium chatlog.
+
+    @param filename: File to read.
+    @type filename: str
+    @rtype: dict
+    """
     tree = xml.dom.minidom.parse(filename)
     
     chatobject = tree.childNodes[0]
@@ -47,6 +63,13 @@ def parse_adium(filename):
     return c
 
 def parse_pidgin(filename):
+    """
+    Parses an Pidgin chatlog.
+
+    @param filename: File to read.
+    @type filename: str
+    @rtype: dict
+    """
     with open(filename) as f:
         filetext = f.read()
     
