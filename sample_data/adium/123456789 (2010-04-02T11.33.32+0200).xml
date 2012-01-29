@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<chat xmlns="http://purl.org/net/ulf/ns/0.4-02" account="example@example.org" service="Facebook">
+<event type="windowOpened" sender="example@example.org" time="2010-04-02T11:33:51+02:00"></event>
+<message sender="example@example.org" time="2010-04-02T11:33:51+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="123456789" time="2010-04-02T11:35:23+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T11:35:39+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="123456789" time="2010-04-02T11:36:04+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T11:36:25+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T11:36:51+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:37:03+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:37:25+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxx</div></message>
+<status type="idle" sender="123456789" time="2010-04-02T11:41:27+02:00" alias="other guy"></status>
+<message sender="123456789" time="2010-04-02T11:43:11+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T11:43:55+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<status type="available" sender="123456789" time="2010-04-02T11:44:27+02:00" alias="other guy"></status>
+<message sender="example@example.org" time="2010-04-02T11:44:45+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="123456789" time="2010-04-02T11:46:50+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<status type="online" sender="123456789" time="2010-04-02T11:46:51+02:00" alias="other guy"></status>
+<message sender="123456789" time="2010-04-02T11:47:01+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T11:47:01+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T11:47:17+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<status type="idle" sender="123456789" time="2010-04-02T11:47:27+02:00" alias="other guy"></status>
+<status type="available" sender="123456789" time="2010-04-02T11:48:27+02:00" alias="other guy"></status>
+<message sender="123456789" time="2010-04-02T11:49:09+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T11:49:36+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:49:44+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:49:57+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:50:09+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<message sender="example@example.org" time="2010-04-02T11:50:36+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<event type="windowClosed" sender="example@example.org" time="2010-04-02T11:52:02+02:00"></event>
+<event type="windowOpened" sender="example@example.org" time="2010-04-02T11:59:32+02:00"></event>
+<message sender="123456789" time="2010-04-02T11:59:32+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<status type="online" sender="123456789" time="2010-04-02T11:59:32+02:00" alias="other guy"></status>
+<message sender="123456789" time="2010-04-02T11:59:35+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T11:59:35+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T11:59:42+02:00" alias="Me"><div>xx</div></message>
+<message sender="example@example.org" time="2010-04-02T12:00:00+02:00" alias="Me"><div>xxxxxxxxxxxxxxxx</div></message>
+<status type="available" sender="123456789" time="2010-04-02T12:00:26+02:00" alias="other guy"></status>
+<message sender="123456789" time="2010-04-02T12:00:27+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T12:00:51+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T12:00:58+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T12:01:15+02:00" alias="Me"><div>xxxxxxxxxxxx</div></message>
+<message sender="123456789" time="2010-04-02T12:02:28+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="123456789" time="2010-04-02T12:02:36+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxxxxxxxxxxxxxxxxx</span></div></message>
+<message sender="example@example.org" time="2010-04-02T12:02:46+02:00" alias="Me"><div>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</div></message>
+<event type="windowClosed" sender="example@example.org" time="2010-04-02T12:02:52+02:00"></event>
+<event type="windowOpened" sender="example@example.org" time="2010-04-02T12:02:55+02:00"></event>
+<message sender="123456789" time="2010-04-02T12:02:53+02:00" alias="other guy"><div><span style="font-family: Helvetica; font-size: 12pt;">xxx</span></div></message>
+<event type="windowClosed" sender="example@example.org" time="2010-04-02T12:02:58+02:00"></event></chat>
