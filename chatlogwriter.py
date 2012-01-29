@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
+"""
+Writes chatlogs in list and dict structures into various formats.
+"""
+
 import dateutil.parser
 import json
 

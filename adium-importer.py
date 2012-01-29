@@ -3,6 +3,10 @@
 
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
+"""
+Main script, interface to read and write various chatlog file formats.
+"""
+
 import optparse
 import json
 import sys
