@@ -34,7 +34,7 @@ def _parse_args():
     @return: Tuple with options and (positional) arguments.
     @rtype: tuple
     """
-    parser = optparse.OptionParser(usage="", description="")
+    parser = optparse.OptionParser(usage="%prog [options] logfile", description="Parses chatlogs and writes them in other formats.")
     parser.add_option("-o", dest="outfile", default=None, help="File to write to")
     parser.add_option("-w", dest="write_format", default="pidgin", help="Write format. [default: %default]")
     parser.add_option("-r", dest="read_format", default="adium", help="Read format. [default: %default]")
