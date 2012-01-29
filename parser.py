@@ -10,6 +10,8 @@ import xml.dom.minidom
 def parse(filename, read_format):
     if read_format == "adium":
         read_parser = parse_adium
+    elif read_format == "pidgin":
+        read_parser = parse_pidgin
 
     return read_parser(filename)
 
