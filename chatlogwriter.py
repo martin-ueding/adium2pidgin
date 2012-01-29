@@ -28,6 +28,7 @@ def write(chat, outfile, write_format):
 
     format_writer(chat, outfile)
 
+
 def write_pidgin(chat, outfile):
     """
     Writes a chat dict as pidgin HTML file.

@@ -31,6 +31,7 @@ def main():
     if options.outfile is not None:
         outfile.close()
 
+
 def _parse_args():
     """
     Parses the command line arguments.

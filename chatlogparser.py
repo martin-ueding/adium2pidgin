@@ -33,6 +33,7 @@ def parse(filename, read_format):
 
     return read_parser(filename)
 
+
 def parse_json(filename):
     """
     Parses an JSON chatlog.
@@ -45,6 +46,7 @@ def parse_json(filename):
         chat = json.load(f)
 
     return chat
+
 
 def parse_adium(filename):
     """
@@ -83,6 +85,7 @@ def parse_adium(filename):
     c = {"messages": m_list, "account": account, "service": service}
 
     return c
+
 
 def parse_pidgin(filename):
     """
