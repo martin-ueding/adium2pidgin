@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
+import json
 import optparse
 import re
 import xml
@@ -21,8 +22,23 @@ def parse(filename, read_format):
         read_parser = parse_adium
     elif read_format == "pidgin":
         read_parser = parse_pidgin
+    elif read_format == "json":
+        read_parser = parse_json
 
     return read_parser(filename)
+
+def parse_json(filename):
+    """
+    Parses an JSON chatlog.
+
+    @param filename: File to read.
+    @type filename: str
+    @rtype: dict
+    """
+    with open(filename) as f:
+        chat = json.load(f)
+
+    return chat
 
 def parse_adium(filename):
     """
