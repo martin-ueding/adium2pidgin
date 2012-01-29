@@ -14,19 +14,24 @@ import chatlogwriter
 
 class ChatlogwriterTest(unittest.TestCase):
     def testJsonWriter(self):
+        # TODO Implement test.
         assert True
 
     def testPidginWriter(self):
+        # TODO Implement test.
         assert True
 
 class ChatlogparserTest(unittest.TestCase):
     def testPidginParser(self):
+        # TODO Implement test.
         assert True
 
     def testAdiumParser(self):
+        # TODO Implement test.
         assert True
 
     def testJsonParser(self):
+        # TODO Implement test.
         assert True
 
 if __name__ == "__main__":

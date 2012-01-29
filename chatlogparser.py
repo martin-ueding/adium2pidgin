@@ -6,6 +6,7 @@
 """
 Parses chatlogs in various formats into a dict and list structure.
 """
+# TODO Document that dict and list structure.
 
 import json
 import optparse
