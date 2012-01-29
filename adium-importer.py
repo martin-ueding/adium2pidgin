@@ -7,8 +7,8 @@ import optparse
 import json
 import sys
 
-import parser
-import writer
+import chatlogparser
+import chatlogwriter
 
 def main():
     options, args = _parse_args()
