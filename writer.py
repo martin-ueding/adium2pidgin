@@ -54,3 +54,4 @@ def write_json(chat, outfile):
     @type outfile: file
     """
     json.dump(chat, outfile, indent=4, sort_keys=True)
+    outfile.write("\n")
