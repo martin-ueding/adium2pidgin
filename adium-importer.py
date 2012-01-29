@@ -15,14 +15,14 @@ def main():
 
     filename = args[0]
 
-    imported = parser.parse(filename, options.read_format)
+    imported = chatlogparser.parse(filename, options.read_format)
 
     if options.outfile is not None:
         outfile = open(options.outfile, "w")
     else:
         outfile = sys.stdout
 
-    writer.write(imported, outfile, options.write_format)
+    chatlogwriter.write(imported, outfile, options.write_format)
 
     if options.outfile is not None:
         outfile.close()
