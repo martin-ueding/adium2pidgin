@@ -14,14 +14,17 @@ import chatlogparser
 class ChatlogwriterTest(unittest.TestCase):
     def testJsonWriter(self):
         assert True
+
     def testPidginWriter(self):
         assert True
 
 class ChatlogparserTest(unittest.TestCase):
     def testPidginParser(self):
         assert True
+
     def testAdiumParser(self):
         assert True
+
     def testJsonParser(self):
         assert True
 
