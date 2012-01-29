@@ -10,6 +10,7 @@ Tests the various modules.
 import unittest
 
 import chatlogparser
+import chatlogwriter
 
 class ChatlogwriterTest(unittest.TestCase):
     def testJsonWriter(self):
