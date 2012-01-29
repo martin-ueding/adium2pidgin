@@ -3,10 +3,13 @@
 # Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
 
 import dateutil.parser
+import json
 
 def write(chat, outfile, write_format):
     if write_format == "pidgin":
         format_writer = write_pidgin
+    elif write_format == "json":
+        format_writer = write_json
 
     format_writer(chat, outfile)
 
@@ -41,7 +44,7 @@ def write_pidgin(chat, outfile):
     outfile.write('</body></html>\n')
 
 
-def writer_json(chat, outfile):
+def write_json(chat, outfile):
     """
     Writes a chat dict as JSON file.
 
