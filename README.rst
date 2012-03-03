@@ -1,21 +1,19 @@
 adium2pidgin
 ============
-Converts Adium XML chatlogs into Pidgin HTML chatlogs.
 
-The logs are parsed into an intermediate structure of lists and dicts, so it
-can be saved as a simple JSON file to be reimported later on.
+installation
+------------
+For all users::
 
-The JSON interface allows conversion between all logs formats, one just needs
-to write a parser from a specific format to JSON or a writer from JSON into
-some format.
+    sudo python setup.py install
 
-Parser
-------
--  Adium XML
--  JSON
--  Purple HTML (in progress)
+Or for yourself::
 
-Writer
-------
--  Purple HTML
--  JSON
+    python setup.py install --user
+
+
+usage
+-----
+See the manual_ for more usage information.
+
+.. _manual: adium2pidgin1.rst
