@@ -10,16 +10,18 @@ Writes chatlogs in list and dict structures into various formats.
 import dateutil.parser
 import json
 
+__docformat__ = "restructuredtext en"
+
 def write(chat, outfile, write_format):
     """
     Writes a chat dict to an outfile in the given format.
 
-    @param chat: Dict with chat.
-    @type chat: dict
-    @param outfile: File to write to.
-    @type outfile: file
-    @param write_format: Format to write in.
-    @type write_format: str
+    :param chat: Dict with chat.
+    :type chat: dict
+    :param outfile: File to write to.
+    :type outfile: file
+    :param write_format: Format to write in.
+    :type write_format: str
     """
     if write_format == "pidgin":
         format_writer = write_pidgin
@@ -33,10 +35,10 @@ def write_pidgin(chat, outfile):
     """
     Writes a chat dict as pidgin HTML file.
 
-    @param chat: Dict with chat.
-    @type chat: dict
-    @param outfile: File to write to.
-    @type outfile: file
+    :param chat: Dict with chat.
+    :type chat: dict
+    :param outfile: File to write to.
+    :type outfile: file
     """
     # TODO Write correct data into this header.
     outfile.write('<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Conversation with 307611255 at Mo 01 Aug 2011 10:45:58 CEST on 307259554 (icq)</title></head><body><h3>Conversation with 307611255 at Mo 01 Aug 2011 10:45:58 CEST on 307259554 (icq)</h3>\n')
@@ -64,10 +66,10 @@ def write_json(chat, outfile):
     """
     Writes a chat dict as JSON file.
 
-    @param chat: Dict with chat.
-    @type chat: dict
-    @param outfile: File to write to.
-    @type outfile: file
+    :param chat: Dict with chat.
+    :type chat: dict
+    :param outfile: File to write to.
+    :type outfile: file
     """
     json.dump(chat, outfile, indent=4, sort_keys=True)
     outfile.write("\n")

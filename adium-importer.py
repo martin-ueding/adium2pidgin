@@ -14,6 +14,8 @@ import sys
 import chatlogparser
 import chatlogwriter
 
+__docformat__ = "restructuredtext en"
+
 def main():
     options, args = _parse_args()
 
@@ -36,8 +38,8 @@ def _parse_args():
     """
     Parses the command line arguments.
 
-    @return: Tuple with options and (positional) arguments.
-    @rtype: tuple
+    :return: Tuple with options and (positional) arguments.
+    :rtype: tuple
     """
     parser = optparse.OptionParser(usage="%prog [options] logfile", description="Parses chatlogs and writes them in other formats.")
     parser.add_option("-o", dest="outfile", default=None, help="File to write to")

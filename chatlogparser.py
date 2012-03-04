@@ -14,15 +14,17 @@ import re
 import xml
 import xml.dom.minidom
 
+__docformat__ = "restructuredtext en"
+
 def parse(filename, read_format):
     """
     Parses a chatlog into a chat dict.
 
-    @param filename: File to read.
-    @type filename: str
-    @param read_format: Format of the chatlog.
-    @type read_format: str
-    @rtype: dict
+    :param filename: File to read.
+    :type filename: str
+    :param read_format: Format of the chatlog.
+    :type read_format: str
+    :rtype: dict
     """
     if read_format == "adium":
         read_parser = parse_adium
@@ -38,9 +40,9 @@ def parse_json(filename):
     """
     Parses an JSON chatlog.
 
-    @param filename: File to read.
-    @type filename: str
-    @rtype: dict
+    :param filename: File to read.
+    :type filename: str
+    :rtype: dict
     """
     with open(filename) as f:
         chat = json.load(f)
@@ -52,9 +54,9 @@ def parse_adium(filename):
     """
     Parses an Adium chatlog.
 
-    @param filename: File to read.
-    @type filename: str
-    @rtype: dict
+    :param filename: File to read.
+    :type filename: str
+    :rtype: dict
     """
     tree = xml.dom.minidom.parse(filename)
     
@@ -91,9 +93,9 @@ def parse_pidgin(filename):
     """
     Parses an Pidgin chatlog.
 
-    @param filename: File to read.
-    @type filename: str
-    @rtype: dict
+    :param filename: File to read.
+    :type filename: str
+    :rtype: dict
     """
     with open(filename) as f:
         filetext = f.read()
