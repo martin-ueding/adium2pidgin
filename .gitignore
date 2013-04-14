@@ -1,3 +1,7 @@
 *.pyc
+
 build/
+
 html
+
+adium2pidgin.1.gz
