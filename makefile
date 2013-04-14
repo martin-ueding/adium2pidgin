@@ -36,6 +36,7 @@ install:
 
 .PHONY: clean
 clean:
+	$(RM) *.1.gz
 	$(RM) *.pyc *.pyo
 	$(RM) -r build
 	$(RM) -r html
