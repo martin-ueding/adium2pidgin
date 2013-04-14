@@ -11,17 +11,19 @@ convert Adium XML chatlogs into Pidgin HTML chatlogs
 
 SYNOPSIS
 ========
-::
-    python adium-importer.py [options] input-file
 
+::
+
+    adium-importer [options] input-file
 
 DESCRIPTION
 ===========
-Converts *adium* XML chatlogs into the *Pidgin* HTML format.
 
+Converts *Adium* XML chatlogs into the *Pidgin* HTML format.
 
 OPTIONS
 =======
+
 ``-o``
     File to write to.
 ``-w``
@@ -29,7 +31,7 @@ OPTIONS
 ``-r``
     Read format.
 
-
 SEE ALSO
 ========
+
 adium, pidgin
