@@ -14,7 +14,7 @@ SYNOPSIS
 
 ::
 
-    adium-importer [options] input-file
+    adium2pidgin [options] input-file
 
 DESCRIPTION
 ===========

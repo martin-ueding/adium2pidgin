@@ -26,7 +26,7 @@ setup(
         'chatlogwriter',
         'tests',
     ],
-    scripts=['adium-importer'],
+    scripts=['adium2pidgin'],
     url="http://martin-ueding.de/projects/adium2pidgin/",
     version="1.0",
 )
