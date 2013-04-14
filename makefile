@@ -1,4 +1,4 @@
-# Copyright (c) 2012 Martin Ueding <dev@martin-ueding.de>
+# Copyright © 2012-2013 Martin Ueding <dev@martin-ueding.de>
 
 ###############################################################################
 #                                   License                                   #
@@ -21,7 +21,11 @@ pythonfiles:=$(wildcard *.py */*.py)
 html/index.html: $(pythonfiles)
 	epydoc -v $^
 
+install:
+	./setup.py install --install-layout=deb --prefix="$(DESTDIR)/usr"
+
 .PHONY: clean
 clean:
 	$(RM) *.pyc *.pyo
+	$(RM) -r build
 	$(RM) -r html
